@@ -50,8 +50,8 @@ body{
     flex-direction:column;
     list-style:none; /* Removes the dots */
     opacity: 0;
+    visibility: hidden; /* pointer-event: none; was causing links to break */
     border-radius: 5px;
-    pointer-events: none;
     transform: translateY(-10px);
     transition: all 0.4s ease;
 }
@@ -91,8 +91,8 @@ body{
 
 .sprints button:focus + ul, .portfolio button:focus + ul{
     opacity: 1;
-    pointer-events: all;
     transform: translateY(0px);
+    visibility: visible;
 }
 
 h1{
@@ -103,10 +103,78 @@ h2{
     font-size: 40px;
 }
 
+h3{
+    font-size: 28px;
+    text-align: left;
+}
+
+h4{
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+    margin-left: 5%;
+    margin-right: 60%;
+    padding-bottom: 10px;
+}
+
+h5{
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+    margin-left: 5%;
+    margin-right: 60%;
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
 .main-text{
     padding-top: 30px;
 }
 
 .home-text{
-    padding-top: 30px;
+    border: 0px solid;
+    padding-left: 20px;
+    margin-left: 5%;
+    margin-right: 60%;
+    text-align: left;
+}
+
+.header-text{
+    border: 0px solid;
+    padding: 20px;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 60%;
+    text-align: left;
+}
+
+.properties-list{
+    border: 0px solid;
+    padding-left: 20px;
+    margin-left: 5%;
+    margin-right: 60%;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.welcome-text{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.margin-img{
+    width: 100%;
+    max-width: 35vh;
+    float: right;
+    padding-right: 25%;
+    padding-bottom: 10px;
+}
+
+footer{
+    width: 100%;
+    position:relative;
+    height: 20px;
+    font-size: 12px;
+    clear: both;
 }
