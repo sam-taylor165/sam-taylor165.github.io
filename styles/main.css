@@ -127,6 +127,22 @@ h5{
     padding-top: 40px;
 }
 
+h6{
+    float:left;
+    font-size: 30px;
+    text-decoration: none;
+    padding-left: 800px;
+    font-weight: normal;
+}
+
+h7{
+    float:right;
+    font-size:30px;
+    text-decoration: none;
+    padding-right: 800px;
+
+}
+
 .main-text{
     padding-top: 30px;
 }
